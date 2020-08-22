@@ -1,0 +1,13 @@
+kubectl version
+kubectl get nodes
+kubectl -n kube-system get pods
+kubectl create -f log_generator-deployments.yaml
+kubectl get deployment
+kubectl logs logapp-deployment-569dd8b478-mzjjv
+kubectl get nodes -owide
+kubectl describe pods
+kubectl get pods
+kubectl exec -it logapp-deployment-569dd8b478-mzjjv sh
+kubectl logs esnode-0
+kubectl get pods --watch
+kubectl get statefulset

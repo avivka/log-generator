@@ -1,0 +1,1169 @@
+avivka@DESKTOP-48MKEI0:~$ sudo apt update -y
+[sudo] password for avivka:
+Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [813 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1038 kB]
+Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [348 kB]
+Get:8 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [255 kB]
+Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [85.5 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [18.8 kB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1100 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [342 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [76.4 kB]
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [16.7 kB]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [695 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [19.4 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6740 B]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [7736 B]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [4588 B]
+Get:20 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [230 kB]
+Get:21 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [8312 B]
+Get:22 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2880 B]
+Fetched 5320 kB in 4s (1434 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+111 packages can be upgraded. Run 'apt list --upgradable' to see them.
+avivka@DESKTOP-48MKEI0:~$ docker version
+Client: Docker Engine - Community
+ Version:           19.03.8
+ API version:       1.40
+ Go version:        go1.12.17
+ Git commit:        afacb8b7f0
+ Built:             Wed Mar 11 01:25:46 2020
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          19.03.8
+  API version:      1.40 (minimum version 1.12)
+  Go version:       go1.12.17
+  Git commit:       afacb8b
+  Built:            Wed Mar 11 01:29:16 2020
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v1.2.13
+  GitCommit:        7ad184331fa3e55e52b890ea95e65ba581ae3429
+ runc:
+  Version:          1.0.0-rc10
+  GitCommit:        dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ docker-init:
+  Version:          0.18.0
+  GitCommit:        fec3683
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:18:29Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:18:29Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+avivka@DESKTOP-48MKEI0:~$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:18:29Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+avivka@DESKTOP-48MKEI0:~$ mkdir LogApp
+avivka@DESKTOP-48MKEI0:~$ cd LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ chmod 775 log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ ./log_generator.sh
+date
+date
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ ./log_generator.sh
+Fri Aug 21 17:28:24 IDT 2020
+Fri Aug 21 17:28:29 IDT 2020
+^[:wq!
+Fri Aug 21 17:28:34 IDT 2020
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ ./log_generator.sh
+./log_generator.sh: line 7: /var/log/date.log: Permission denied
+./log_generator.sh: line 7: /var/log/date.log: Permission denied
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ export LOGFILE=date.log
+avivka@DESKTOP-48MKEI0:~/LogApp$ ./log_generator.sh
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp$ cat log_generator.sh
+#! /bin/bash
+
+LOGFILE=${LOGFILE:-/var/log/date.log}
+
+while true
+do
+ echo `date` >> $LOGFILE
+ sleep 5
+done
+avivka@DESKTOP-48MKEI0:~/LogApp$ cat date.log
+Fri Aug 21 17:32:40 IDT 2020
+Fri Aug 21 17:32:45 IDT 2020
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ kubectl
+kubectl      kubectl.exe
+avivka@DESKTOP-48MKEI0:~/LogApp$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0", GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", GitTreeState:"clean", BuildDate:"2020-01-15T08:18:29Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
+avivka@DESKTOP-48MKEI0:~/LogApp$ kubectl get pods
+No resources found in default namespace.
+avivka@DESKTOP-48MKEI0:~/LogApp$ kubectl get nodes
+NAME             STATUS   ROLES    AGE   VERSION
+docker-desktop   Ready    master   18h   v1.16.6-beta.0
+avivka@DESKTOP-48MKEI0:~/LogApp$ kubectl -n kube-system get pods
+NAME                                     READY   STATUS    RESTARTS   AGE
+coredns-5644d7b6d9-9kghd                 1/1     Running   0          18h
+coredns-5644d7b6d9-n2fhg                 1/1     Running   0          18h
+etcd-docker-desktop                      1/1     Running   0          18h
+kube-apiserver-docker-desktop            1/1     Running   0          18h
+kube-controller-manager-docker-desktop   1/1     Running   3          18h
+kube-proxy-ltddb                         1/1     Running   0          18h
+kube-scheduler-docker-desktop            1/1     Running   3          18h
+storage-provisioner                      1/1     Running   4          18h
+vpnkit-controller                        1/1     Running   0          18h
+avivka@DESKTOP-48MKEI0:~/LogApp$ ll
+total 16
+drwxr-xr-x  2 avivka avivka 4096 Aug 21 17:33 ./
+drwxr-xr-x 12 avivka avivka 4096 Aug 21 17:24 ../
+-rw-r--r--  1 avivka avivka   58 Aug 21 17:32 date.log
+-rwxrwxr-x  1 avivka avivka  115 Aug 21 17:33 log_generator.sh*
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Docerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Docerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ mv Docerfile Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  date.log  log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build .
+[sudo] password for avivka:
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM busybox
+latest: Pulling from library/busybox
+61c5ed1cbdf8: Pull complete
+Digest: sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+Status: Downloaded newer image for busybox:latest
+ ---> 018c9d7b792b
+Step 2/3 : COPY . /log_generator.sh
+ ---> a31fb627e82c
+Step 3/3 : CMD bash ./log_generator.sh
+ ---> Running in 47e0d4d05980
+Removing intermediate container 47e0d4d05980
+ ---> b3fab9f43c01
+Successfully built b3fab9f43c01
+avivka@DESKTOP-48MKEI0:~/LogApp$ docker images
+REPOSITORY                           TAG                                              IMAGE ID            CREATED             SIZE
+<none>                               <none>                                           b3fab9f43c01        8 seconds ago       1.22MB
+busybox                              latest                                           018c9d7b792b        3 weeks ago         1.22MB
+docker/desktop-storage-provisioner   v1.1                                             e704287ce753        5 months ago        41.8MB
+docker/desktop-vpnkit-controller     v1.0                                             79da37e5a3aa        5 months ago        36.6MB
+docker/desktop-kubernetes            kubernetes-v1.16.5-cni-v0.7.5-critools-v1.15.0   a86647f0b376        7 months ago        279MB
+k8s.gcr.io/kube-proxy                v1.16.5                                          0ee1b8a3ebe0        7 months ago        82.7MB
+k8s.gcr.io/kube-scheduler            v1.16.5                                          b4d073a9efda        7 months ago        83.5MB
+k8s.gcr.io/kube-controller-manager   v1.16.5                                          441835dd2301        7 months ago        151MB
+k8s.gcr.io/kube-apiserver            v1.16.5                                          fc838b21afbb        7 months ago        159MB
+docker/kube-compose-controller       v0.4.25-alpha1                                   129151cdf35f        9 months ago        35.6MB
+docker/kube-compose-api-server       v0.4.25-alpha1                                   989749268895        9 months ago        50.7MB
+docker/kube-compose-installer        v0.4.25-alpha1                                   2a71ac5a1359        9 months ago        42.3MB
+k8s.gcr.io/etcd                      3.3.15-0                                         b2756210eeab        11 months ago       247MB
+k8s.gcr.io/coredns                   1.6.2                                            bf261d157914        12 months ago       44.1MB
+k8s.gcr.io/pause                     3.1                                              da86e6ba6ca1        2 years ago         742kB
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run 018c9d7b792b
+
+avivka@DESKTOP-48MKEI0:~/LogApp$
+avivka@DESKTOP-48MKEI0:~/LogApp$ docker ps
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS              PORTS               NAMES
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   26 minutes ago      Up 26 minutes                           k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   26 minutes ago      Up 26 minutes                           k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   26 minutes ago      Up 26 minutes                           k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   18 hours ago        Up 18 hours                             k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   18 hours ago        Up 18 hours                             k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   18 hours ago        Up 18 hours                             k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                             k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                             k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   18 hours ago        Up 18 hours                             k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   18 hours ago        Up 18 hours                             k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   18 hours ago        Up 18 hours                             k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:~/LogApp$ docker ps -a
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS                      PORTS               NAMES
+d0703cab4f39        018c9d7b792b                       "sh"                     22 seconds ago      Exited (0) 17 seconds ago                       practical_thompson
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   26 minutes ago      Up 26 minutes                                   k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   26 minutes ago      Up 26 minutes                                   k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   26 minutes ago      Up 26 minutes                                   k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   18 hours ago        Up 18 hours                                     k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   18 hours ago        Up 18 hours                                     k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   18 hours ago        Up 18 hours                                     k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                                     k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                                     k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   18 hours ago        Up 18 hours                                     k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   18 hours ago        Up 18 hours                                     k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   18 hours ago        Up 18 hours                                     k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                                     k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rm f39
+Error: No such container: f39
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rm 4f39
+Error: No such container: 4f39
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rm d07
+d07
+avivka@DESKTOP-48MKEI0:~/LogApp$ docker ps -a
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS              PORTS               NAMES
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   27 minutes ago      Up 27 minutes                           k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   27 minutes ago      Up 27 minutes                           k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   27 minutes ago      Up 27 minutes                           k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   18 hours ago        Up 18 hours                             k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   18 hours ago        Up 18 hours                             k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   18 hours ago        Up 18 hours                             k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                             k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   18 hours ago        Up 18 hours                             k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   18 hours ago        Up 18 hours                             k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   18 hours ago        Up 18 hours                             k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   18 hours ago        Up 18 hours                             k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 18 hours ago        Up 18 hours                             k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t LogApp:1
+invalid argument "LogApp:1" for "-t, --tag" flag: invalid reference format: repository name must be lowercase
+See 'docker build --help'.
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t LogApp:1 .
+invalid argument "LogApp:1" for "-t, --tag" flag: invalid reference format: repository name must be lowercase
+See 'docker build --help'.
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:1
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:1 .
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM busybox
+ ---> 018c9d7b792b
+Step 2/3 : COPY /log_generator.sh .
+ ---> 38d68a5163cb
+Step 3/3 : CMD bash ./log_generator.sh
+ ---> Running in 2d38bd72abfb
+Removing intermediate container 2d38bd72abfb
+ ---> b1e2748cfe04
+Successfully built b1e2748cfe04
+Successfully tagged log_app:1
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker images
+REPOSITORY                           TAG                                              IMAGE ID            CREATED             SIZE
+log_app                              1                                                b1e2748cfe04        5 seconds ago       1.22MB
+<none>                               <none>                                           b3fab9f43c01        2 minutes ago       1.22MB
+busybox                              latest                                           018c9d7b792b        3 weeks ago         1.22MB
+docker/desktop-storage-provisioner   v1.1                                             e704287ce753        5 months ago        41.8MB
+docker/desktop-vpnkit-controller     v1.0                                             79da37e5a3aa        5 months ago        36.6MB
+docker/desktop-kubernetes            kubernetes-v1.16.5-cni-v0.7.5-critools-v1.15.0   a86647f0b376        7 months ago        279MB
+k8s.gcr.io/kube-apiserver            v1.16.5                                          fc838b21afbb        7 months ago        159MB
+k8s.gcr.io/kube-scheduler            v1.16.5                                          b4d073a9efda        7 months ago        83.5MB
+k8s.gcr.io/kube-proxy                v1.16.5                                          0ee1b8a3ebe0        7 months ago        82.7MB
+k8s.gcr.io/kube-controller-manager   v1.16.5                                          441835dd2301        7 months ago        151MB
+docker/kube-compose-controller       v0.4.25-alpha1                                   129151cdf35f        9 months ago        35.6MB
+docker/kube-compose-api-server       v0.4.25-alpha1                                   989749268895        9 months ago        50.7MB
+docker/kube-compose-installer        v0.4.25-alpha1                                   2a71ac5a1359        9 months ago        42.3MB
+k8s.gcr.io/etcd                      3.3.15-0                                         b2756210eeab        11 months ago       247MB
+k8s.gcr.io/coredns                   1.6.2                                            bf261d157914        12 months ago       44.1MB
+k8s.gcr.io/pause                     3.1                                              da86e6ba6ca1        2 years ago         742kB
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi 018c9d7b792b
+Error response from daemon: conflict: unable to delete 018c9d7b792b (cannot be forced) - image has dependent child images
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi -f 018c9d7b792b
+Error response from daemon: conflict: unable to delete 018c9d7b792b (cannot be forced) - image has dependent child images
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi b3fab9f43c01
+Deleted: sha256:b3fab9f43c0182575e6ddffb0b9b35976e533c3b9a732d3e8f03b22c24fa0820
+Deleted: sha256:a31fb627e82c0111ba1ca8b7d66e4989b3d877765d432e8c2a4ee215d7bb85ab
+Deleted: sha256:c5693ce5fc91d1b9b6230ea22f19e52b4f6fe45c85f7e20e7812f975c8d3663b
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi -f 018c9d7b792b
+Error response from daemon: conflict: unable to delete 018c9d7b792b (cannot be forced) - image has dependent child images
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:1
+/bin/sh: bash: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi -f 018c9d7b792b
+Error response from daemon: conflict: unable to delete 018c9d7b792b (cannot be forced) - image has dependent child images
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Docerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:2 .
+Sending build context to Docker daemon  4.096kB
+[WARNING]: Empty continuation line found in:
+    RUN apk update -y     apk add bash --no-cache COPY /log_generator.sh .
+[WARNING]: Empty continuation lines will become errors in a future release.
+Step 1/3 : FROM alpine:3.12.0
+3.12.0: Pulling from library/alpine
+df20fa9351a1: Pull complete
+Digest: sha256:185518070891758909c9f839cf4ca393ee977ac378609f700f60a771a2dfe321
+Status: Downloaded newer image for alpine:3.12.0
+ ---> a24bb4013296
+Step 2/3 : RUN apk update -y     apk add bash --no-cache COPY /log_generator.sh .
+ ---> Running in 22ca8d377939
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+apk: unrecognized option: y
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+v3.12.0-256-gcb89326327 [http://dl-cdn.alpinelinux.org/alpine/v3.12/main]
+v3.12.0-255-g92cbb6be98 [http://dl-cdn.alpinelinux.org/alpine/v3.12/community]
+OK: 12746 distinct packages available
+Removing intermediate container 22ca8d377939
+ ---> da76945ad98f
+Step 3/3 : CMD bash ./log_generator.sh
+ ---> Running in 4ed4c48f3df2
+Removing intermediate container 4ed4c48f3df2
+ ---> 9804a855ab75
+Successfully built 9804a855ab75
+Successfully tagged log_app:2
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:2 .
+Sending build context to Docker daemon  4.096kB
+[WARNING]: Empty continuation line found in:
+    RUN apk update     apk add bash --no-cache COPY /log_generator.sh .
+[WARNING]: Empty continuation lines will become errors in a future release.
+Step 1/3 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/3 : RUN apk update     apk add bash --no-cache COPY /log_generator.sh .
+ ---> Running in 0254ee9c437b
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+^[:qv3.12.0-256-gcb89326327 [http://dl-cdn.alpinelinux.org/alpine/v3.12/main]
+v3.12.0-255-g92cbb6be98 [http://dl-cdn.alpinelinux.org/alpine/v3.12/community]
+OK: 12746 distinct packages available
+Removing intermediate container 0254ee9c437b
+ ---> 0e126873ec01
+Step 3/3 : CMD bash ./log_generator.sh
+ ---> Running in 75b865aaa420
+Removing intermediate container 75b865aaa420
+ ---> bd5af776b03b
+Successfully built bd5af776b03b
+Successfully tagged log_app:2
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:2
+/bin/sh: bash: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:3 .
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/3 : RUN apk update     apk add bash --no-cache COPY /log_generator.sh .
+ ---> Using cache
+ ---> 0e126873ec01
+Step 3/3 : CMD ./log_generator.sh
+ ---> Running in a9f9b3ad5ea8
+Removing intermediate container a9f9b3ad5ea8
+ ---> 1120ed165bd1
+Successfully built 1120ed165bd1
+Successfully tagged log_app:3
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:3
+/bin/sh: ./log_generator.sh: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:4 .
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/3 : RUN apk update     apk add bash --no-cache COPY /log_generator.sh .
+ ---> Using cache
+ ---> 0e126873ec01
+Step 3/3 : ENTRYPOINT ./log_generator.sh
+ ---> Running in 6289e29ab0fc
+Removing intermediate container 6289e29ab0fc
+ ---> 045ad7b0a6f4
+Successfully built 045ad7b0a6f4
+Successfully tagged log_app:4
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:4
+/bin/sh: ./log_generator.sh: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:5
+Unable to find image 'log_app:5' locally
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:5 .
+Sending build context to Docker daemon  4.096kB
+Step 1/3 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/3 : RUN apk update     apk add bash --no-cache COPY /log_generator.sh .
+ ---> Using cache
+ ---> 0e126873ec01
+Step 3/3 : ENTRYPOINT /log_generator.sh
+ ---> Running in 528461ef4e3f
+Removing intermediate container 528461ef4e3f
+ ---> 2ca80e80373c
+Successfully built 2ca80e80373c
+Successfully tagged log_app:5
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:5
+/bin/sh: /log_generator.sh: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:6 .
+Sending build context to Docker daemon  4.096kB
+Step 1/4 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/4 : RUN apk update     apk add --no-cache --upgrade bash
+ ---> Running in 6f0a47100ae6
+apk: unrecognized option: upgrade
+apk-tools 2.10.5, compiled for x86_64.
+
+usage: apk update
+
+Description:
+  Update repository indexes from all remote
+  repositories
+
+Global options:
+  -h, --help              Show generic help or
+                          applet specific help
+  -p, --root DIR          Install packages to DIR
+  -X, --repository REPO   Use packages from REPO
+  -q, --quiet             Print less information
+  -v, --verbose           Print more information
+                          (can be doubled)
+  -i, --interactive       Ask confirmation for
+                          certain operations
+  -V, --version           Print program version
+                          and exit
+  -f, --force             Enable selected
+                          --force-* (deprecated)
+  --force-binary-stdout   Continue even if binary
+                          data is to be output
+  --force-broken-world    Continue even if
+                          'world' cannot be
+                          satisfied
+  --force-non-repository  Continue even if
+                          packages may be lost on
+                          reboot
+  --force-old-apk         Continue even if
+                          packages use
+                          unsupported features
+  --force-overwrite       Overwrite files in
+                          other packages
+  --force-refresh         Do not use cached files
+                          (local or from proxy)
+  -U, --update-cache      Alias for
+                          --cache-max-age 1
+  --progress              Show a progress bar
+  --progress-fd FD        Write progress to fd
+  --no-progress           Disable progress bar
+                          even for TTYs
+  --purge                 Delete also modified
+                          configuration files
+                          (pkg removal) and
+                          uninstalled packages
+                          from cache (cache
+                          clean)
+  --allow-untrusted       Install packages with
+                          untrusted signature or
+                          no signature
+  --wait TIME             Wait for TIME seconds
+                          to get an exclusive
+                          repository lock before
+                          failing
+  --keys-dir KEYSDIR      Override directory of
+                          trusted keys
+  --repositories-file REPOFILE Override
+                          repositories file
+  --no-network            Do not use network
+                          (cache is still used)
+  --no-cache              Do not use any local
+                          cache path
+  --cache-dir CACHEDIR    Override cache
+                          directory
+  --cache-max-age AGE     Maximum AGE (in
+                          minutes) for index in
+                          cache before refresh
+  --arch ARCH             Use architecture with
+                          --root
+  --print-arch            Print default arch and
+                          exit
+
+This apk has coffee making abilities.
+The command '/bin/sh -c apk update     apk add --no-cache --upgrade bash' returned a non-zero code: 1
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:6 .
+Sending build context to Docker daemon  4.096kB
+Step 1/4 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/4 : RUN apk update     apk add --no-cache bash
+ ---> Running in 5aed27a9144f
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+v3.12.0-256-gcb89326327 [http://dl-cdn.alpinelinux.org/alpine/v3.12/main]
+v3.12.0-255-g92cbb6be98 [http://dl-cdn.alpinelinux.org/alpine/v3.12/community]
+OK: 12746 distinct packages available
+Removing intermediate container 5aed27a9144f
+ ---> c69a063e0bbc
+Step 3/4 : COPY /log_generator.sh .
+ ---> d18f3614c90f
+Step 4/4 : ENTRYPOINT /log_generator.sh
+ ---> Running in a09f547d4552
+Removing intermediate container a09f547d4552
+ ---> 2eb31de8974b
+Successfully built 2eb31de8974b
+Successfully tagged log_app:6
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:6
+/bin/sh: /log_generator.sh: not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app: .
+invalid argument "log_app:" for "-t, --tag" flag: invalid reference format
+See 'docker build --help'.
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:7 .
+Sending build context to Docker daemon  4.096kB
+Step 1/4 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/4 : RUN apk update     apk add --no-cache bash
+ ---> Using cache
+ ---> c69a063e0bbc
+Step 3/4 : COPY /log_generator.sh .
+ ---> Using cache
+ ---> d18f3614c90f
+Step 4/4 : CMD ["log_generator.sh"]
+ ---> Running in a328fdfd85dd
+Removing intermediate container a328fdfd85dd
+ ---> 82cc3a9e7bb8
+Successfully built 82cc3a9e7bb8
+Successfully tagged log_app:7
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:7
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"log_generator.sh\": executable file not found in $PATH": unknown.
+ERRO[0000] error waiting for container: context canceled
+avivka@DESKTOP-48MKEI0:~/LogApp$ vim Dockerfile
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker build -t log_app:8 .
+Sending build context to Docker daemon  4.096kB
+Step 1/4 : FROM alpine:3.12.0
+ ---> a24bb4013296
+Step 2/4 : RUN apk update     apk add --no-cache bash
+ ---> Using cache
+ ---> c69a063e0bbc
+Step 3/4 : COPY /log_generator.sh .
+ ---> Using cache
+ ---> d18f3614c90f
+Step 4/4 : CMD ["sh", "log_generator.sh"]
+ ---> Running in 74dc9cb81b31
+Removing intermediate container 74dc9cb81b31
+ ---> ed1c7696101e
+Successfully built ed1c7696101e
+Successfully tagged log_app:8
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run log_app:8
+
+
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^Ccavivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker run -d log_app:8
+8ccf4a3658ba3698ef154679ed2259980a55a34b9d0533ff12ef24b24ac0a423
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker ps -a
+CONTAINER ID        IMAGE                              COMMAND                  CREATED              STATUS                        PORTS               NAMES
+8ccf4a3658ba        log_app:8                          "sh log_generator.sh"    6 seconds ago        Up 5 seconds                                      infallible_neumann
+ee72faf51d76        log_app:8                          "sh log_generator.sh"    32 seconds ago       Exited (130) 11 seconds ago                       interesting_kepler
+25614b4753cc        log_app:7                          "log_generator.sh"       About a minute ago   Created                                           funny_volhard
+a75d0772cd35        log_app:6                          "/bin/sh -c /log_gen…"   2 minutes ago        Exited (127) 2 minutes ago                        sweet_chandrasekhar
+6f0a47100ae6        a24bb4013296                       "/bin/sh -c 'apk upd…"   3 minutes ago        Exited (1) 3 minutes ago                          distracted_thompson
+23c272f430bf        log_app:5                          "/bin/sh -c /log_gen…"   4 minutes ago        Exited (127) 4 minutes ago                        blissful_driscoll
+c6147333d9ea        log_app:4                          "/bin/sh -c ./log_ge…"   4 minutes ago        Exited (127) 4 minutes ago                        laughing_liskov
+31960c7b82f3        log_app:3                          "/bin/sh -c ./log_ge…"   7 minutes ago        Exited (127) 7 minutes ago                        kind_burnell
+9a65d1d4662d        log_app:2                          "/bin/sh -c 'bash ./…"   7 minutes ago        Exited (127) 7 minutes ago                        exciting_hopper
+e26b37ad6651        log_app:1                          "/bin/sh -c 'bash ./…"   13 minutes ago       Exited (127) 13 minutes ago                       thirsty_shtern
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   42 minutes ago       Up 42 minutes                                     k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   42 minutes ago       Up 42 minutes                                     k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   42 minutes ago       Up 42 minutes                                     k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   18 hours ago         Up 18 hours                                       k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   18 hours ago         Up 18 hours                                       k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   19 hours ago         Up 19 hours                                       k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   19 hours ago         Up 19 hours                                       k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   19 hours ago         Up 19 hours                                       k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   19 hours ago         Up 19 hours                                       k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   19 hours ago         Up 19 hours                                       k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   19 hours ago         Up 19 hours                                       k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago         Up 19 hours                                       k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rm e26b37ad6651 9a65d1d4662d 31960c7b82f3 c6147333d9ea 23c272f430bf 6f0a47100ae6 a75d0772cd35 25614b4753cc ee72faf51d76
+e26b37ad6651
+9a65d1d4662d
+31960c7b82f3
+c6147333d9ea
+23c272f430bf
+6f0a47100ae6
+a75d0772cd35
+25614b4753cc
+ee72faf51d76
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker images
+REPOSITORY                           TAG                                              IMAGE ID            CREATED              SIZE
+log_app                              8                                                ed1c7696101e        About a minute ago   5.57MB
+log_app                              7                                                82cc3a9e7bb8        2 minutes ago        5.57MB
+log_app                              6                                                2eb31de8974b        3 minutes ago        5.57MB
+log_app                              5                                                2ca80e80373c        5 minutes ago        5.57MB
+log_app                              4                                                045ad7b0a6f4        5 minutes ago        5.57MB
+log_app                              3                                                1120ed165bd1        8 minutes ago        5.57MB
+log_app                              2                                                bd5af776b03b        8 minutes ago        5.57MB
+<none>                               <none>                                           9804a855ab75        9 minutes ago        5.57MB
+log_app                              1                                                b1e2748cfe04        15 minutes ago       1.22MB
+busybox                              latest                                           018c9d7b792b        3 weeks ago          1.22MB
+alpine                               3.12.0                                           a24bb4013296        2 months ago         5.57MB
+docker/desktop-storage-provisioner   v1.1                                             e704287ce753        5 months ago         41.8MB
+docker/desktop-vpnkit-controller     v1.0                                             79da37e5a3aa        5 months ago         36.6MB
+docker/desktop-kubernetes            kubernetes-v1.16.5-cni-v0.7.5-critools-v1.15.0   a86647f0b376        7 months ago         279MB
+k8s.gcr.io/kube-proxy                v1.16.5                                          0ee1b8a3ebe0        7 months ago         82.7MB
+k8s.gcr.io/kube-scheduler            v1.16.5                                          b4d073a9efda        7 months ago         83.5MB
+k8s.gcr.io/kube-controller-manager   v1.16.5                                          441835dd2301        7 months ago         151MB
+k8s.gcr.io/kube-apiserver            v1.16.5                                          fc838b21afbb        7 months ago         159MB
+docker/kube-compose-controller       v0.4.25-alpha1                                   129151cdf35f        9 months ago         35.6MB
+docker/kube-compose-api-server       v0.4.25-alpha1                                   989749268895        9 months ago         50.7MB
+docker/kube-compose-installer        v0.4.25-alpha1                                   2a71ac5a1359        9 months ago         42.3MB
+k8s.gcr.io/etcd                      3.3.15-0                                         b2756210eeab        11 months ago        247MB
+k8s.gcr.io/coredns                   1.6.2                                            bf261d157914        12 months ago        44.1MB
+k8s.gcr.io/pause                     3.1                                              da86e6ba6ca1        2 years ago          742kB
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi 018c9d7b792b b1e2748cfe04 9804a855ab75 bd5af776b03b 1120ed165bd1 045ad7b0a6f4 2ca80e80373c 2eb31de8974b 82cc3a9e7bb8
+Untagged: log_app:1
+Deleted: sha256:b1e2748cfe04c8173827cd811e33a181823f9a67373aa02813a8af7f75f90fe1
+Deleted: sha256:38d68a5163cb40241b6c4692e54ab23a57b7cd6c5496707b02d54a8ac0adb8e0
+Deleted: sha256:ce9376d6c95ee3c22d4886ad7f32d7ea252e23588ac8b1628a0b507dc86acb28
+Deleted: sha256:9804a855ab7526b50d5635e159abea85609274a442ffdb46565139c0c4b25d90
+Deleted: sha256:da76945ad98f68d5c94a240e4b244069063614d63d2cd1987129ea99b34ef0e0
+Untagged: log_app:2
+Deleted: sha256:bd5af776b03b5045f1e5c822be1467e4a2af21deccce33a1daf7c9ac69193c6a
+Untagged: log_app:3
+Deleted: sha256:1120ed165bd16b10a7a5c095106c1a706c13dba15d8ee3f688457d711c809943
+Untagged: log_app:4
+Deleted: sha256:045ad7b0a6f46f3fac6afbccbef82841ca1bea4712b4893d0dae1a5cbdaa97ac
+Untagged: log_app:5
+Deleted: sha256:2ca80e80373cdb40270db66a24f02a78285c4425d110841f658df637fc3476ea
+Deleted: sha256:0e126873ec011ffa05bea646ac74f66ddd35b6c372df07f6db21a4190c197f76
+Untagged: log_app:6
+Deleted: sha256:2eb31de8974b47b7f6b5b01e180a9883cebaa7fafb453b0aad190e4911e908e3
+Untagged: log_app:7
+Deleted: sha256:82cc3a9e7bb86ef24f3ae001982a55a1c71c16e4283c48ce104702ac742e56a2
+Error response from daemon: conflict: unable to delete 018c9d7b792b (cannot be forced) - image has dependent child images
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker images
+REPOSITORY                           TAG                                              IMAGE ID            CREATED             SIZE
+log_app                              8                                                ed1c7696101e        2 minutes ago       5.57MB
+busybox                              latest                                           018c9d7b792b        3 weeks ago         1.22MB
+alpine                               3.12.0                                           a24bb4013296        2 months ago        5.57MB
+docker/desktop-storage-provisioner   v1.1                                             e704287ce753        5 months ago        41.8MB
+docker/desktop-vpnkit-controller     v1.0                                             79da37e5a3aa        5 months ago        36.6MB
+docker/desktop-kubernetes            kubernetes-v1.16.5-cni-v0.7.5-critools-v1.15.0   a86647f0b376        7 months ago        279MB
+k8s.gcr.io/kube-scheduler            v1.16.5                                          b4d073a9efda        7 months ago        83.5MB
+k8s.gcr.io/kube-proxy                v1.16.5                                          0ee1b8a3ebe0        7 months ago        82.7MB
+k8s.gcr.io/kube-apiserver            v1.16.5                                          fc838b21afbb        7 months ago        159MB
+k8s.gcr.io/kube-controller-manager   v1.16.5                                          441835dd2301        7 months ago        151MB
+docker/kube-compose-controller       v0.4.25-alpha1                                   129151cdf35f        9 months ago        35.6MB
+docker/kube-compose-api-server       v0.4.25-alpha1                                   989749268895        9 months ago        50.7MB
+docker/kube-compose-installer        v0.4.25-alpha1                                   2a71ac5a1359        9 months ago        42.3MB
+k8s.gcr.io/etcd                      3.3.15-0                                         b2756210eeab        11 months ago       247MB
+k8s.gcr.io/coredns                   1.6.2                                            bf261d157914        12 months ago       44.1MB
+k8s.gcr.io/pause                     3.1                                              da86e6ba6ca1        2 years ago         742kB
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker rmi 018c9d7b792b
+Untagged: busybox:latest
+Untagged: busybox@sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+Deleted: sha256:018c9d7b792b4be80095d957533667279843acf9a46c973067c8d1dff31ea8b4
+Deleted: sha256:514c3a3e64d4ebf15f482c9e8909d130bcd53bcc452f0225b0a04744de7b8c43
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker ps
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS              PORTS               NAMES
+8ccf4a3658ba        log_app:8                          "sh log_generator.sh"    2 minutes ago       Up 2 minutes                            infallible_neumann
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   44 minutes ago      Up 44 minutes                           k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   44 minutes ago      Up 44 minutes                           k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   44 minutes ago      Up 44 minutes                           k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   19 hours ago        Up 19 hours                             k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   19 hours ago        Up 19 hours                             k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   19 hours ago        Up 19 hours                             k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   19 hours ago        Up 19 hours                             k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   19 hours ago        Up 19 hours                             k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   19 hours ago        Up 19 hours                             k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   19 hours ago        Up 19 hours                             k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   19 hours ago        Up 19 hours                             k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:~/LogApp$ cat date.log
+Fri Aug 21 17:32:40 IDT 2020
+Fri Aug 21 17:32:45 IDT 2020
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker exec
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker exec -it 8ccf4a3658ba /bin/bash
+OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused "exec: \"/bin/bash\": stat /bin/bash: no such file or directory": unknown
+avivka@DESKTOP-48MKEI0:~/LogApp$ sudo docker exec -it 8ccf4a3658ba /bin/sh
+/ #
+/ #
+/ # ls
+bin               etc               lib               media             opt               root              sbin              sys               usr
+dev               home              log_generator.sh  mnt               proc              run               srv               tmp               var
+/ # cd /var/lo
+local/  lock/   log/
+/ # cd /var/log
+/var/log # ls
+date.log
+/var/log # cat date.log
+Fri Aug 21 15:01:12 UTC 2020
+Fri Aug 21 15:01:17 UTC 2020
+Fri Aug 21 15:01:22 UTC 2020
+Fri Aug 21 15:01:27 UTC 2020
+Fri Aug 21 15:01:32 UTC 2020
+Fri Aug 21 15:01:37 UTC 2020
+Fri Aug 21 15:01:42 UTC 2020
+Fri Aug 21 15:01:47 UTC 2020
+Fri Aug 21 15:01:52 UTC 2020
+Fri Aug 21 15:01:57 UTC 2020
+Fri Aug 21 15:02:02 UTC 2020
+Fri Aug 21 15:02:07 UTC 2020
+Fri Aug 21 15:02:12 UTC 2020
+Fri Aug 21 15:02:17 UTC 2020
+Fri Aug 21 15:02:22 UTC 2020
+Fri Aug 21 15:02:27 UTC 2020
+Fri Aug 21 15:02:32 UTC 2020
+Fri Aug 21 15:02:37 UTC 2020
+Fri Aug 21 15:02:42 UTC 2020
+Fri Aug 21 15:02:47 UTC 2020
+Fri Aug 21 15:02:52 UTC 2020
+Fri Aug 21 15:02:57 UTC 2020
+Fri Aug 21 15:03:02 UTC 2020
+Fri Aug 21 15:03:07 UTC 2020
+Fri Aug 21 15:03:13 UTC 2020
+Fri Aug 21 15:03:18 UTC 2020
+Fri Aug 21 15:03:23 UTC 2020
+Fri Aug 21 15:03:28 UTC 2020
+Fri Aug 21 15:03:33 UTC 2020
+Fri Aug 21 15:03:38 UTC 2020
+Fri Aug 21 15:03:43 UTC 2020
+Fri Aug 21 15:03:48 UTC 2020
+Fri Aug 21 15:03:53 UTC 2020
+Fri Aug 21 15:03:58 UTC 2020
+Fri Aug 21 15:04:03 UTC 2020
+Fri Aug 21 15:04:08 UTC 2020
+Fri Aug 21 15:04:13 UTC 2020
+Fri Aug 21 15:04:18 UTC 2020
+/var/log # date
+Fri Aug 21 15:04:26 UTC 2020
+/var/log # cat date.log
+Fri Aug 21 15:01:12 UTC 2020
+Fri Aug 21 15:01:17 UTC 2020
+Fri Aug 21 15:01:22 UTC 2020
+Fri Aug 21 15:01:27 UTC 2020
+Fri Aug 21 15:01:32 UTC 2020
+Fri Aug 21 15:01:37 UTC 2020
+Fri Aug 21 15:01:42 UTC 2020
+Fri Aug 21 15:01:47 UTC 2020
+Fri Aug 21 15:01:52 UTC 2020
+Fri Aug 21 15:01:57 UTC 2020
+Fri Aug 21 15:02:02 UTC 2020
+Fri Aug 21 15:02:07 UTC 2020
+Fri Aug 21 15:02:12 UTC 2020
+Fri Aug 21 15:02:17 UTC 2020
+Fri Aug 21 15:02:22 UTC 2020
+Fri Aug 21 15:02:27 UTC 2020
+Fri Aug 21 15:02:32 UTC 2020
+Fri Aug 21 15:02:37 UTC 2020
+Fri Aug 21 15:02:42 UTC 2020
+Fri Aug 21 15:02:47 UTC 2020
+Fri Aug 21 15:02:52 UTC 2020
+Fri Aug 21 15:02:57 UTC 2020
+Fri Aug 21 15:03:02 UTC 2020
+Fri Aug 21 15:03:07 UTC 2020
+Fri Aug 21 15:03:13 UTC 2020
+Fri Aug 21 15:03:18 UTC 2020
+Fri Aug 21 15:03:23 UTC 2020
+Fri Aug 21 15:03:28 UTC 2020
+Fri Aug 21 15:03:33 UTC 2020
+Fri Aug 21 15:03:38 UTC 2020
+Fri Aug 21 15:03:43 UTC 2020
+Fri Aug 21 15:03:48 UTC 2020
+Fri Aug 21 15:03:53 UTC 2020
+Fri Aug 21 15:03:58 UTC 2020
+Fri Aug 21 15:04:03 UTC 2020
+Fri Aug 21 15:04:08 UTC 2020
+Fri Aug 21 15:04:13 UTC 2020
+Fri Aug 21 15:04:18 UTC 2020
+Fri Aug 21 15:04:23 UTC 2020
+Fri Aug 21 15:04:28 UTC 2020
+/var/log # exit
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  date.log  log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ pwd
+/home/avivka/LogApp
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  controllers  date.log  log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd ..
+avivka@DESKTOP-48MKEI0:~$ ls
+LogApp  WaltyBE  WaltyBO  WaltyCrawlers  WaltyDevOps  WaltyFE  ubuntu_setup_env.sh
+avivka@DESKTOP-48MKEI0:~$ cd LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  controllers  date.log  log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd controllers/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+log_generator-deployments.yaml.txt
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ mv log_generator-deployments.yaml.txt log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cat log_generator-deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80avivka@DESKTOP-48MKEI0:~/LogApp/controllers$
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ \\wsl$\Ubuntu-18.04\home\avivka\LogApp\controllers
+
+^X^C
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ^C
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cat log_generator-deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logapp-deployment
+  labels:
+    app: log-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-app
+  template:
+    metadata:
+      labels:
+        app: log-app
+    spec:
+      containers:
+      - name: log_generator
+        image: log_app:8
+        env:
+        - name: LOGFILE
+          value: /logs/application.log
+        volumeMounts:
+        - mountPath: /logs
+          name: service-log
+      volumes:
+      - hostPath:
+          path: /logs
+        name: service-logavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f log_generator-deployments.yaml
+The Deployment "logapp-deployment" is invalid: spec.template.spec.containers[0].name: Invalid value: "log_generator": a DNS-1123 label must consist of lower case alphanumeric characters or '-', and must start and end with an alphanumeric character (e.g. 'my-name',  or '123-abc', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?')
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f log_generator-deployments.yaml
+deployment.apps/logapp-deployment created
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get deployment
+NAME                READY   UP-TO-DATE   AVAILABLE   AGE
+logapp-deployment   1/1     1            1           11s
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods
+NAME                                 READY   STATUS    RESTARTS   AGE
+logapp-deployment-569dd8b478-mzjjv   1/1     Running   0          24s
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl logs logapp-deployment-569dd8b478-mzjjv
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /logs
+-bash: cd: /logs: No such file or directory
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /
+avivka@DESKTOP-48MKEI0:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+avivka@DESKTOP-48MKEI0:/$ kubectl get nodes -owide
+NAME             STATUS   ROLES    AGE   VERSION          INTERNAL-IP    EXTERNAL-IP   OS-IMAGE         KERNEL-VERSION                CONTAINER-RUNTIME
+docker-desktop   Ready    master   19h   v1.16.6-beta.0   192.168.65.3   <none>        Docker Desktop   4.19.104-microsoft-standard   docker://19.3.8
+avivka@DESKTOP-48MKEI0:/$ docker ps
+CONTAINER ID        IMAGE                              COMMAND                  CREATED             STATUS              PORTS               NAMES
+f5314e846e6a        ed1c7696101e                       "sh log_generator.sh"    2 minutes ago       Up 2 minutes                            k8s_log-generator_logapp-deployment-569dd8b478-mzjjv_default_7810491a-631e-4728-a88e-008dbb314c0e_0
+0e30e8dcde9c        k8s.gcr.io/pause:3.1               "/pause"                 2 minutes ago       Up 2 minutes                            k8s_POD_logapp-deployment-569dd8b478-mzjjv_default_7810491a-631e-4728-a88e-008dbb314c0e_0
+8ccf4a3658ba        log_app:8                          "sh log_generator.sh"    43 minutes ago      Up 43 minutes                           infallible_neumann
+bd58ac8bc6b0        441835dd2301                       "kube-controller-man…"   About an hour ago   Up About an hour                        k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_3
+7ffb7ad0836a        e704287ce753                       "/storage-provisione…"   About an hour ago   Up About an hour                        k8s_storage-provisioner_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_4
+d91e7469378b        b4d073a9efda                       "kube-scheduler --au…"   About an hour ago   Up About an hour                        k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_3
+4fee79c3cc06        docker/kube-compose-controller     "/compose-controller…"   19 hours ago        Up 19 hours                             k8s_compose_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+e5c6b216268b        docker/kube-compose-api-server     "/api-server --kubec…"   19 hours ago        Up 19 hours                             k8s_compose_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+b00c56a2f4db        docker/desktop-vpnkit-controller   "/kube-vpnkit-forwar…"   19 hours ago        Up 19 hours                             k8s_vpnkit-controller_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+5833b75d4341        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_compose-78f95d4f8c-mtsnj_docker_1d94d054-cb90-4ffe-819e-21d971492793_0
+6a39044c3a21        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_compose-api-6ffb89dc58-rwp7t_docker_f4a6c373-537d-4f6a-b33d-cea0b31a459d_0
+27fa99860742        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_vpnkit-controller_kube-system_f8fc4f47-fb92-407f-9842-f551b211c0ff_0
+d6c80c839f25        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_storage-provisioner_kube-system_28043c21-ea2a-4601-bb47-1782cd6a6c0f_0
+cdd44bf79548        bf261d157914                       "/coredns -conf /etc…"   19 hours ago        Up 19 hours                             k8s_coredns_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+ce343a792ce0        bf261d157914                       "/coredns -conf /etc…"   19 hours ago        Up 19 hours                             k8s_coredns_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+8ea7cdf7214c        0ee1b8a3ebe0                       "/usr/local/bin/kube…"   19 hours ago        Up 19 hours                             k8s_kube-proxy_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+66ae1eba3b5c        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_coredns-5644d7b6d9-n2fhg_kube-system_a322be11-84e9-423a-b64a-74b13353e1e0_0
+2c6f714f12be        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_coredns-5644d7b6d9-9kghd_kube-system_2a08ff66-f0a3-4204-b07c-419d7f07bcd3_0
+7cf7ad347b99        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-proxy-ltddb_kube-system_54b02e2d-462b-4446-b034-1b2ef7605432_0
+a21fcbaccf9f        b2756210eeab                       "etcd --advertise-cl…"   19 hours ago        Up 19 hours                             k8s_etcd_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+8cbd00fcaa7f        fc838b21afbb                       "kube-apiserver --ad…"   19 hours ago        Up 19 hours                             k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+5c854a604056        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-scheduler-docker-desktop_kube-system_28dd1b1230fbe15350eb1b896ae9493d_0
+b4d770fff6f6        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_etcd-docker-desktop_kube-system_bc3eca0122540ccc59e959a7805e87e8_0
+7d3454a32c2b        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-controller-manager-docker-desktop_kube-system_c9d7fe159210d67175d06db05086b592_0
+c0078bd2342f        k8s.gcr.io/pause:3.1               "/pause"                 19 hours ago        Up 19 hours                             k8s_POD_kube-apiserver-docker-desktop_kube-system_2966bdea771eade42b079889c75cf17e_0
+avivka@DESKTOP-48MKEI0:/$ cd
+bin/        dev/        home/       lib32/      lost+found/ mnt/        proc/       run/        snap/       sys/        usr/
+boot/       etc/        lib/        lib64/      media/      opt/        root/       sbin/       srv/        tmp/        var/
+avivka@DESKTOP-48MKEI0:/$ cd /home/avivka/
+.cache/        .config/       .docker/       .kube/         LogApp/        WaltyBE/       WaltyBO/       WaltyCrawlers/ WaltyDevOps/   WaltyFE/
+avivka@DESKTOP-48MKEI0:/$ cd /home/avivka/LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ s
+s: command not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ ks
+ks: command not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ ks
+ks: command not found
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  controllers  date.log  log_generator.sh
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd controllers/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe poda
+^C
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pods
+Name:         logapp-deployment-569dd8b478-mzjjv
+Namespace:    default
+Priority:     0
+Node:         docker-desktop/192.168.65.3
+Start Time:   Fri, 21 Aug 2020 18:42:02 +0300
+Labels:       app=log-app
+              pod-template-hash=569dd8b478
+Annotations:  <none>
+Status:       Running
+IP:           10.1.0.7
+IPs:
+  IP:           10.1.0.7
+Controlled By:  ReplicaSet/logapp-deployment-569dd8b478
+Containers:
+  log-generator:
+    Container ID:   docker://f5314e846e6a16d7bcf2d22b127648b437ffed80b6aedb1c4d1521b03a3e3ae3
+    Image:          log_app:8
+    Image ID:       docker://sha256:ed1c7696101e582c1e02abe76d4f4b22384186a2d82ec3d45b5f5de070872fc3
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 21 Aug 2020 18:42:04 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      LOGFILE:  /logs/application.log
+    Mounts:
+      /logs from service-log (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  service-log:
+    Type:          HostPath (bare host directory volume)
+    Path:          /logs
+    HostPathType:
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age        From                     Message
+  ----    ------     ----       ----                     -------
+  Normal  Scheduled  <unknown>  default-scheduler        Successfully assigned default/logapp-deployment-569dd8b478-mzjjv to docker-desktop
+  Normal  Pulled     3m37s      kubelet, docker-desktop  Container image "log_app:8" already present on machine
+  Normal  Created    3m37s      kubelet, docker-desktop  Created container log-generator
+  Normal  Started    3m37s      kubelet, docker-desktop  Started container log-generator
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd        251G  2.0G  237G   1% /
+tmpfs           3.1G     0  3.1G   0% /mnt/wsl
+/dev/sdc        251G  2.4G  236G   1% /mnt/wsl/docker-desktop-data/isocache
+none            3.1G   12K  3.1G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdb        251G  117M  239G   1% /mnt/wsl/docker-desktop/docker-desktop-proxy
+/dev/loop0      244M  244M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tools           225G  212G   13G  95% /init
+none            3.1G     0  3.1G   0% /dev
+none            3.1G   12K  3.1G   1% /run
+none            3.1G     0  3.1G   0% /run/lock
+none            3.1G     0  3.1G   0% /run/shm
+none            3.1G     0  3.1G   0% /run/user
+tmpfs           3.1G     0  3.1G   0% /sys/fs/cgroup
+C:\             225G  212G   13G  95% /mnt/c
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop
+docker-desktop/             docker-desktop-bind-mounts/ docker-desktop-data/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop
+docker-desktop/             docker-desktop-bind-mounts/ docker-desktop-data/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd /mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04/
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ ls
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ cd /mnt/wsl/docker-desktop
+docker-desktop/             docker-desktop-bind-mounts/ docker-desktop-data/
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ cd /mnt/wsl/docker-desktop/
+cli-tools/      shared-sockets/
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ cd /mnt/wsl/docker-desktop/shared-sockets/
+guest-services/ host-services/
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ kubectl get pods
+NAME                                 READY   STATUS    RESTARTS   AGE
+logapp-deployment-569dd8b478-mzjjv   1/1     Running   0          5m7s
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ kubectl exec -it logapp-deployment-569dd8b478-mzjjv /bin/bash'
+> ^C
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ kubectl exec -it logapp-deployment-569dd8b478-mzjjv /bin/bash
+OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused "exec: \"/bin/bash\": stat /bin/bash: no such file or directory": unknown
+command terminated with exit code 126
+avivka@DESKTOP-48MKEI0:/mnt/wsl/docker-desktop-bind-mounts/Ubuntu-18.04$ kubectl exec -it logapp-deployment-569dd8b478-mzjjv sh
+/ #
+/ #
+/ # ls
+bin               etc               lib               logs              mnt               proc              run               srv               tmp               var
+dev               home              log_generator.sh  media             opt               root              sbin              sys               usr
+/ # cd /l
+lib/   logs/
+/ # cd /l
+lib/   logs/
+/ # cd /logs/
+/logs # ls
+application.log
+/logs # cat application.log
+Fri Aug 21 15:42:04 UTC 2020
+Fri Aug 21 15:42:09 UTC 2020
+Fri Aug 21 15:42:14 UTC 2020
+Fri Aug 21 15:42:19 UTC 2020
+Fri Aug 21 15:42:24 UTC 2020
+Fri Aug 21 15:42:29 UTC 2020
+Fri Aug 21 15:42:34 UTC 2020
+Fri Aug 21 15:42:39 UTC 2020
+Fri Aug 21 15:42:44 UTC 2020
+Fri Aug 21 15:42:49 UTC 2020
+Fri Aug 21 15:42:54 UTC 2020
+Fri Aug 21 15:42:59 UTC 2020
+Fri Aug 21 15:43:04 UTC 2020
+Fri Aug 21 15:43:09 UTC 2020
+Fri Aug 21 15:43:14 UTC 2020
+Fri Aug 21 15:43:19 UTC 2020
+Fri Aug 21 15:43:24 UTC 2020
+Fri Aug 21 15:43:29 UTC 2020
+Fri Aug 21 15:43:34 UTC 2020
+Fri Aug 21 15:43:39 UTC 2020
+Fri Aug 21 15:43:44 UTC 2020
+Fri Aug 21 15:43:49 UTC 2020
+Fri Aug 21 15:43:54 UTC 2020
+Fri Aug 21 15:43:59 UTC 2020
+Fri Aug 21 15:44:04 UTC 2020
+Fri Aug 21 15:44:09 UTC 2020
+Fri Aug 21 15:44:14 UTC 2020
+Fri Aug 21 15:44:19 UTC 2020
+Fri Aug 21 15:44:24 UTC 2020
+Fri Aug 21 15:44:29 UTC 2020
+Fri Aug 21 15:44:34 UTC 2020
+Fri Aug 21 15:44:39 UTC 2020
+Fri Aug 21 15:44:44 UTC 2020
+Fri Aug 21 15:44:49 UTC 2020
+Fri Aug 21 15:44:54 UTC 2020
+Fri Aug 21 15:44:59 UTC 2020
+Fri Aug 21 15:45:04 UTC 2020
+Fri Aug 21 15:45:09 UTC 2020
+Fri Aug 21 15:45:14 UTC 2020
+Fri Aug 21 15:45:19 UTC 2020
+Fri Aug 21 15:45:24 UTC 2020
+Fri Aug 21 15:45:29 UTC 2020
+Fri Aug 21 15:45:34 UTC 2020
+Fri Aug 21 15:45:39 UTC 2020
+Fri Aug 21 15:45:44 UTC 2020
+Fri Aug 21 15:45:49 UTC 2020
+Fri Aug 21 15:45:54 UTC 2020
+Fri Aug 21 15:45:59 UTC 2020
+Fri Aug 21 15:46:04 UTC 2020
+Fri Aug 21 15:46:09 UTC 2020
+Fri Aug 21 15:46:14 UTC 2020
+Fri Aug 21 15:46:19 UTC 2020
+Fri Aug 21 15:46:24 UTC 2020
+Fri Aug 21 15:46:29 UTC 2020
+Fri Aug 21 15:46:34 UTC 2020
+Fri Aug 21 15:46:39 UTC 2020
+Fri Aug 21 15:46:44 UTC 2020
+Fri Aug 21 15:46:49 UTC 2020
+Fri Aug 21 15:46:54 UTC 2020
+Fri Aug 21 15:46:59 UTC 2020
+Fri Aug 21 15:47:04 UTC 2020
+Fri Aug 21 15:47:09 UTC 2020
+Fri Aug 21 15:47:14 UTC 2020
+Fri Aug 21 15:47:19 UTC 2020
+Fri Aug 21 15:47:24 UTC 2020
+Fri Aug 21 15:47:29 UTC 2020
+Fri Aug 21 15:47:34 UTC 2020
+Fri Aug 21 15:47:39 UTC 2020
+Fri Aug 21 15:47:44 UTC 2020
+/logs #

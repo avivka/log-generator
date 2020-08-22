@@ -1,0 +1,231 @@
+avivka@DESKTOP-48MKEI0:~$ kubectl logs kibana-5b78fbc78f-5qbgr
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:kibana@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:elasticsearch@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:xpack_main@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:graph@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:monitoring@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:spaces@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["security","warning"],"pid":1,"message":"Generating a random key for xpack.security.encryptionKey. To prevent sessions from being invalidated on restart, please set xpack.security.encryptionKey in kibana.yml"}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["security","warning"],"pid":1,"message":"Session cookies will be transmitted over insecure connections. This is not recommended."}
+{"type":"log","@timestamp":"2020-08-22T21:06:16Z","tags":["status","plugin:security@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:searchprofiler@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:ml@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:tilemap@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:watcher@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:grokdebugger@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:dashboard_mode@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:logstash@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:beats_management@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:apm@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:tile_map@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:task_manager@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:maps@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:interpreter@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:canvas@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:license_management@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:cloud@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:index_management@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:console@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:console_extensions@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:notifications@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:index_lifecycle_management@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:infra@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:rollup@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:remote_clusters@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:cross_cluster_replication@6.8.12","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:translations@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:upgrade_assistant@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:uptime@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:oss_telemetry@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:metrics@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:17Z","tags":["status","plugin:timelion@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:20Z","tags":["status","plugin:elasticsearch@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["license","info","xpack"],"pid":1,"message":"Imported license information from Elasticsearch for the [data] cluster: mode: basic | status: active"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:xpack_main@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:graph@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:searchprofiler@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:ml@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:tilemap@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:watcher@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:grokdebugger@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:logstash@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:beats_management@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:index_management@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:index_lifecycle_management@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:rollup@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:remote_clusters@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:cross_cluster_replication@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["info","monitoring-ui","kibana-monitoring"],"pid":1,"message":"Monitoring status upload endpoint is not enabled in Elasticsearch:Monitoring stats collection is stopped"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:security@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["status","plugin:maps@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+{"type":"log","@timestamp":"2020-08-22T21:06:21Z","tags":["license","info","xpack"],"pid":1,"message":"Imported license information from Elasticsearch for the [monitoring] cluster: mode: basic | status: active"}
+{"type":"log","@timestamp":"2020-08-22T21:06:37Z","tags":["reporting","browser-driver","warning"],"pid":1,"message":"Enabling the Chromium sandbox provides an additional layer of protection."}
+{"type":"log","@timestamp":"2020-08-22T21:06:37Z","tags":["reporting","warning"],"pid":1,"message":"Generating a random key for xpack.reporting.encryptionKey. To prevent pending reports from failing on restart, please set xpack.reporting.encryptionKey in kibana.yml"}
+{"type":"log","@timestamp":"2020-08-22T21:06:37Z","tags":["status","plugin:reporting@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+{"type":"log","@timestamp":"2020-08-22T21:06:38Z","tags":["listening","info"],"pid":1,"message":"Server running at http://0.0.0.0:5601"}
+{"type":"log","@timestamp":"2020-08-22T21:06:38Z","tags":["status","plugin:spaces@6.8.12","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+avivka@DESKTOP-48MKEI0:~$ kubectl get svc
+NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+elasticsearch-cluster   ClusterIP      10.111.223.171   <none>        9300/TCP,9200/TCP   4m53s
+kibana                  LoadBalancer   10.101.190.32    localhost     5061:30933/TCP      22m
+kubernetes              ClusterIP      10.96.0.1        <none>        443/TCP             2d
+avivka@DESKTOP-48MKEI0:~$ curl localhost:5061
+curl: (52) Empty reply from server
+avivka@DESKTOP-48MKEI0:~$ kubectl edit svc kibana
+service/kibana edited
+avivka@DESKTOP-48MKEI0:~$ kubectl describe svc kibana
+Name:                     kibana
+Namespace:                default
+Labels:                   <none>
+Annotations:              <none>
+Selector:                 app=kibana
+Type:                     LoadBalancer
+IP:                       10.101.190.32
+LoadBalancer Ingress:     localhost
+Port:                     <unset>  5601/TCP
+TargetPort:               5601/TCP
+NodePort:                 <unset>  30933/TCP
+Endpoints:                10.1.0.18:5601
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+avivka@DESKTOP-48MKEI0:~$ cd ./LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd ..
+avivka@DESKTOP-48MKEI0:~$ ls
+LogApp  WaltyBE  WaltyBO  WaltyCrawlers  WaltyDevOps  WaltyFE  ubuntu_setup_env.sh
+avivka@DESKTOP-48MKEI0:~$ cd ./LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  controllers  date.log  log_generator.sh  work-process
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd controllers/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+elasticsearch-statefulset.yaml  elasticsearch-svc.yaml  elasticsearch_attempt.txt  kibana-deployment.yaml  kibana-svc-lb.yaml  log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ vim logstash-configmap.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f
+elasticsearch-statefulset.yaml  elasticsearch_attempt.txt       kibana-svc-lb.yaml              logstash-configmap.yaml
+elasticsearch-svc.yaml          kibana-deployment.yaml          log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f logstash-configmap.yaml
+configmap/logstash-configmap created
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods --watch
+NAME                                 READY   STATUS    RESTARTS   AGE
+esnode-0                             1/1     Running   0          26m
+kibana-5b78fbc78f-5qbgr              1/1     Running   0          19m
+logapp-deployment-569dd8b478-mzjjv   1/1     Running   0          29h
+^Cavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get configmap
+NAME                 DATA   AGE
+es-config            2      124m
+logstash-configmap   2      41s
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ vim logstash-deployment.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f
+elasticsearch-statefulset.yaml  elasticsearch_attempt.txt       kibana-svc-lb.yaml              logstash-configmap.yaml
+elasticsearch-svc.yaml          kibana-deployment.yaml          log_generator-deployments.yaml  logstash-deployment.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f logstash-deployment.yaml
+deployment.apps/logstash created
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods --watch
+NAME                                 READY   STATUS              RESTARTS   AGE
+esnode-0                             1/1     Running             0          48m
+kibana-5b78fbc78f-5qbgr              1/1     Running             0          41m
+logapp-deployment-569dd8b478-mzjjv   1/1     Running             0          30h
+logstash-54b9f64c7-vhstk             0/1     ContainerCreating   0          64s
+^Cavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe logstash-54b9f64c7-vhstk
+error: the server doesn't have a resource type "logstash-54b9f64c7-vhstk"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod logstash-54b9f64c7-vhstk
+Name:           logstash-54b9f64c7-vhstk
+Namespace:      default
+Priority:       0
+Node:           docker-desktop/192.168.65.3
+Start Time:     Sun, 23 Aug 2020 00:45:43 +0300
+Labels:         app=logstash
+                pod-template-hash=54b9f64c7
+Annotations:    <none>
+Status:         Pending
+IP:
+IPs:            <none>
+Controlled By:  ReplicaSet/logstash-54b9f64c7
+Containers:
+  logstash-container:
+    Container ID:
+    Image:          docker.elastic.co/logstash/logstash:6.8.12
+    Image ID:
+    Port:           5044/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ContainerCreating
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/logstash/config from logstash-settings-config-volume (rw)
+      /usr/share/logstash/pipeline from logstash-pipeline-config-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  logstash-settings-config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      logstash-configmap
+    Optional:  false
+  logstash-pipeline-config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      logstash-configmap
+    Optional:  false
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                     Message
+  ----    ------     ----  ----                     -------
+  Normal  Scheduled  90s   default-scheduler        Successfully assigned default/logstash-54b9f64c7-vhstk to docker-desktop
+  Normal  Pulling    89s   kubelet, docker-desktop  Pulling image "docker.elastic.co/logstash/logstash:6.8.12"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ cd ..
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd controllers
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+elasticsearch-statefulset.yaml  elasticsearch-svc.yaml  elasticsearch_attempt.txt  kibana-deployment.yaml  kibana-svc-lb.yaml  log_generator-deployments.yaml  logstash-configmap.yaml  logstash-deployment.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ vim logstash-svc.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f
+elasticsearch-statefulset.yaml  elasticsearch_attempt.txt       kibana-svc-lb.yaml              logstash-configmap.yaml         logstash-svc.yaml
+elasticsearch-svc.yaml          kibana-deployment.yaml          log_generator-deployments.yaml  logstash-deployment.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f logstash-svc.yaml
+service/logstash-service created
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get svc
+NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+elasticsearch-cluster   ClusterIP      10.111.223.171   <none>        9300/TCP,9200/TCP   45m
+kibana                  LoadBalancer   10.101.190.32    localhost     5601:30933/TCP      62m
+kubernetes              ClusterIP      10.96.0.1        <none>        443/TCP             2d1h
+logstash-service        ClusterIP      10.109.131.171   <none>        5044/TCP            4s
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods --watch
+NAME                                 READY   STATUS    RESTARTS   AGE
+esnode-0                             1/1     Running   0          51m
+kibana-5b78fbc78f-5qbgr              1/1     Running   0          44m
+logapp-deployment-569dd8b478-mzjjv   1/1     Running   0          30h
+logstash-54b9f64c7-vhstk             1/1     Running   0          4m18s
+^Cavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl logs logstash-54b9f64c7-vhstk
+Could not find log4j2 configuration at path /usr/share/logstash/config/log4j2.properties. Using default config which logs errors to the console
+[INFO ] 2020-08-22 21:48:06.034 [main] writabledirectory - Creating directory {:setting=>"path.queue", :path=>"/usr/share/logstash/data/queue"}
+[INFO ] 2020-08-22 21:48:06.048 [main] writabledirectory - Creating directory {:setting=>"path.dead_letter_queue", :path=>"/usr/share/logstash/data/dead_letter_queue"}
+[WARN ] 2020-08-22 21:48:06.779 [LogStash::Runner] multilocal - Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[INFO ] 2020-08-22 21:48:06.790 [LogStash::Runner] runner - Starting Logstash {"logstash.version"=>"6.8.12"}
+[INFO ] 2020-08-22 21:48:06.802 [LogStash::Runner] agent - No persistent UUID file found. Generating new UUID {:uuid=>"e6c5ce3f-4df5-4647-b069-6221d2f87d11", :path=>"/usr/share/logstash/data/uuid"}
+[INFO ] 2020-08-22 21:48:30.848 [Converge PipelineAction::Create<main>] pipeline - Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50}
+[INFO ] 2020-08-22 21:48:34.609 [[main]-pipeline-manager] elasticsearch - Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://elasticsearch-cluster:9200/]}}
+[WARN ] 2020-08-22 21:48:35.794 [[main]-pipeline-manager] elasticsearch - Restored connection to ES instance {:url=>"http://elasticsearch-cluster:9200/"}
+[INFO ] 2020-08-22 21:48:36.456 [[main]-pipeline-manager] elasticsearch - ES Output version determined {:es_version=>6}
+[WARN ] 2020-08-22 21:48:36.456 [[main]-pipeline-manager] elasticsearch - Detected a 6.x and above cluster: the `type` event field won't be used to determine the document _type {:es_version=>6}
+[INFO ] 2020-08-22 21:48:36.466 [[main]-pipeline-manager] elasticsearch - New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["//elasticsearch-cluster:9200"]}
+[INFO ] 2020-08-22 21:48:36.467 [Ruby-0-Thread-6: /usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-output-elasticsearch-9.4.0-java/lib/logstash/outputs/elasticsearch/common.rb:42] elasticsearch - Using default mapping template
+[INFO ] 2020-08-22 21:48:36.470 [Ruby-0-Thread-6: /usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-output-elasticsearch-9.4.0-java/lib/logstash/outputs/elasticsearch/common.rb:42] elasticsearch - Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>60001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date"}, "@version"=>{"type"=>"keyword"}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[INFO ] 2020-08-22 21:48:36.638 [Ruby-0-Thread-6: /usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-output-elasticsearch-9.4.0-java/lib/logstash/outputs/elasticsearch/common.rb:42] elasticsearch - Installing elasticsearch template to _template/logstash
+[INFO ] 2020-08-22 21:48:37.004 [[main]-pipeline-manager] beats - Beats inputs: Starting input listener {:address=>"0.0.0.0:5044"}
+[INFO ] 2020-08-22 21:48:37.026 [Converge PipelineAction::Create<main>] pipeline - Pipeline started successfully {:pipeline_id=>"main", :thread=>"#<Thread:0x505397b0@/usr/share/logstash/logstash-core/lib/logstash/pipeline.rb:173 sleep>"}
+[INFO ] 2020-08-22 21:48:37.073 [Ruby-0-Thread-2: /usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/stud-0.0.23/lib/stud/task.rb:22] agent - Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[INFO ] 2020-08-22 21:48:37.910 [Api Webserver] agent - Successfully started Logstash API endpoint {:port=>9600}
+[INFO ] 2020-08-22 21:48:39.445 [[main]<beats] Server - Starting server on port: 5044
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$

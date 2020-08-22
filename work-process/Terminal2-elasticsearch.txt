@@ -1,0 +1,710 @@
+Sat Aug 22 18:47:59 UTC 2020
+Sat Aug 22 18:48:04 UTC 2020
+Sat Aug 22 18:48:09 UTC 2020
+Sat Aug 22 18:48:14 UTC 2020
+Sat Aug 22 18:48:19 UTC 2020
+Sat Aug 22 18:48:24 UTC 2020
+Sat Aug 22 18:48:29 UTC 2020
+Sat Aug 22 18:48:34 UTC 2020
+Sat Aug 22 18:48:39 UTC 2020
+Sat Aug 22 18:48:44 UTC 2020
+Sat Aug 22 18:48:49 UTC 2020
+Sat Aug 22 18:48:54 UTC 2020
+Sat Aug 22 18:48:59 UTC 2020
+Sat Aug 22 18:49:04 UTC 2020
+Sat Aug 22 18:49:09 UTC 2020
+Sat Aug 22 18:49:14 UTC 2020
+Sat Aug 22 18:49:19 UTC 2020
+Sat Aug 22 18:49:24 UTC 2020
+Sat Aug 22 18:49:29 UTC 2020
+Sat Aug 22 18:49:34 UTC 2020
+Sat Aug 22 18:49:39 UTC 2020
+Sat Aug 22 18:49:44 UTC 2020
+Sat Aug 22 18:49:49 UTC 2020
+Sat Aug 22 18:49:54 UTC 2020
+Sat Aug 22 18:49:59 UTC 2020
+Sat Aug 22 18:50:04 UTC 2020
+Sat Aug 22 18:50:09 UTC 2020
+Sat Aug 22 18:50:14 UTC 2020
+Sat Aug 22 18:50:19 UTC 2020
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+/logs/application.log
+/ # exit
+command terminated with exit code 130
+avivka@DESKTOP-48MKEI0:~$
+avivka@DESKTOP-48MKEI0:~$
+avivka@DESKTOP-48MKEI0:~$ htop
+avivka@DESKTOP-48MKEI0:~$ cd ./LogApp/
+avivka@DESKTOP-48MKEI0:~/LogApp$ ls
+Dockerfile  controllers  date.log  log_generator.sh  work-process
+avivka@DESKTOP-48MKEI0:~/LogApp$ cd controllers/
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ ls
+elasticsearch_attempt.txt  elasticsearch_attempt.txt:Zone.Identifier  elasticsearch_attempt2.txt  elasticsearch_attempt2.txt:Zone.Identifier  log_generator-deployments.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ mv elasticsearch_attempt2.txt elasticsearch-statefulset.yaml
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f elasticsearch-statefulset.yaml
+configmap/es-config created
+error: unable to recognize "elasticsearch-statefulset.yaml": no matches for kind "StatefulSet" in version "apps/v1beta1"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f elasticsearch-statefulset.yaml
+Error from server (AlreadyExists): error when creating "elasticsearch-statefulset.yaml": configmaps "es-config" already exists
+unable to recognize "elasticsearch-statefulset.yaml": no matches for kind "StatefulSet" in version "apps/v1beta2"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f elasticsearch-statefulset.yaml
+Error from server (AlreadyExists): error when creating "elasticsearch-statefulset.yaml": configmaps "es-config" already exists
+error validating "elasticsearch-statefulset.yaml": error validating data: ValidationError(StatefulSet.spec): missing required field "selector" in io.k8s.api.apps.v1.StatefulSetSpec; if you choose to ignore these errors, turn validation off with --validate=false
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl create -f elasticsearch-statefulset.yaml
+statefulset.apps/esnode created
+Error from server (AlreadyExists): error when creating "elasticsearch-statefulset.yaml": configmaps "es-config" already exists
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods
+NAME                                 READY   STATUS            RESTARTS   AGE
+esnode-0                             0/1     PodInitializing   0          20s
+logapp-deployment-569dd8b478-mzjjv   1/1     Running           0          27h
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods -watch
+Error: unknown shorthand flag: 'a' in -atch
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --output-watch-events=false: Output watch event objects when --watch or --watch-only is used. Existing objects are output as initial ADDED events.
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods --watch
+NAME                                 READY   STATUS            RESTARTS   AGE
+esnode-0                             0/1     PodInitializing   0          36s
+logapp-deployment-569dd8b478-mzjjv   1/1     Running           0          27h
+^Cavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod esnode-0
+Name:         esnode-0
+Namespace:    default
+Priority:     0
+Node:         docker-desktop/192.168.65.3
+Start Time:   Sat, 22 Aug 2020 22:25:08 +0300
+Labels:       app=es-cluster
+              controller-revision-hash=esnode-5bf9c78664
+              statefulset.kubernetes.io/pod-name=esnode-0
+Annotations:  <none>
+Status:       Pending
+IP:           10.1.0.14
+IPs:
+  IP:           10.1.0.14
+Controlled By:  StatefulSet/esnode
+Init Containers:
+  init-sysctl:
+    Container ID:  docker://6933de8e938424812a02d0cb413830e02fafcbf15e7a51ab2610aaf656369e3c
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sysctl
+      -w
+      vm.max_map_count=262144
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 22 Aug 2020 22:25:14 +0300
+      Finished:     Sat, 22 Aug 2020 22:25:14 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Containers:
+  elasticsearch:
+    Container ID:
+    Image:          docker.elastic.co/elasticsearch/elasticsearch:6.5.0
+    Image ID:
+    Ports:          9200/TCP, 9300/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Waiting
+      Reason:       PodInitializing
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      memory:   1Gi
+    Readiness:  http-get http://:9200/_cluster/health%3Flocal=true delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ES_JAVA_OPTS:  <set to the key 'ES_JAVA_OPTS' of config map 'es-config'>  Optional: false
+    Mounts:
+      /usr/share/elasticsearch/config/elasticsearch.yml from elasticsearch-config (rw,path="elasticsearch.yml")
+      /usr/share/elasticsearch/data from es-data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  es-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  es-data-esnode-0
+    ReadOnly:   false
+  elasticsearch-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      es-config
+    Optional:  false
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason            Age   From                     Message
+  ----     ------            ----  ----                     -------
+  Warning  FailedScheduling  2m9s  default-scheduler        pod has unbound immediate PersistentVolumeClaims
+  Normal   Scheduled         2m9s  default-scheduler        Successfully assigned default/esnode-0 to docker-desktop
+  Normal   Pulling           2m8s  kubelet, docker-desktop  Pulling image "busybox"
+  Normal   Pulled            2m3s  kubelet, docker-desktop  Successfully pulled image "busybox"
+  Normal   Created           2m3s  kubelet, docker-desktop  Created container init-sysctl
+  Normal   Started           2m3s  kubelet, docker-desktop  Started container init-sysctl
+  Normal   Pulling           2m3s  kubelet, docker-desktop  Pulling image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd        251G  2.0G  237G   1% /
+tmpfs           3.1G     0  3.1G   0% /mnt/wsl
+/dev/sdc        251G  3.0G  236G   2% /mnt/wsl/docker-desktop-data/isocache
+none            3.1G   12K  3.1G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdb        251G  117M  239G   1% /mnt/wsl/docker-desktop/docker-desktop-proxy
+/dev/loop0      244M  244M     0 100% /mnt/wsl/docker-desktop/cli-tools
+tools           225G  203G   23G  91% /init
+none            3.1G     0  3.1G   0% /dev
+none            3.1G  8.0K  3.1G   1% /run
+none            3.1G     0  3.1G   0% /run/lock
+none            3.1G     0  3.1G   0% /run/shm
+none            3.1G     0  3.1G   0% /run/user
+tmpfs           3.1G     0  3.1G   0% /sys/fs/cgroup
+C:\             225G  203G   23G  91% /mnt/c
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod esnode-0
+Name:         esnode-0
+Namespace:    default
+Priority:     0
+Node:         docker-desktop/192.168.65.3
+Start Time:   Sat, 22 Aug 2020 22:25:08 +0300
+Labels:       app=es-cluster
+              controller-revision-hash=esnode-5bf9c78664
+              statefulset.kubernetes.io/pod-name=esnode-0
+Annotations:  <none>
+Status:       Pending
+IP:           10.1.0.14
+IPs:
+  IP:           10.1.0.14
+Controlled By:  StatefulSet/esnode
+Init Containers:
+  init-sysctl:
+    Container ID:  docker://6933de8e938424812a02d0cb413830e02fafcbf15e7a51ab2610aaf656369e3c
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sysctl
+      -w
+      vm.max_map_count=262144
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 22 Aug 2020 22:25:14 +0300
+      Finished:     Sat, 22 Aug 2020 22:25:14 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Containers:
+  elasticsearch:
+    Container ID:
+    Image:          docker.elastic.co/elasticsearch/elasticsearch:6.5.0
+    Image ID:
+    Ports:          9200/TCP, 9300/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Waiting
+      Reason:       PodInitializing
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      memory:   1Gi
+    Readiness:  http-get http://:9200/_cluster/health%3Flocal=true delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ES_JAVA_OPTS:  <set to the key 'ES_JAVA_OPTS' of config map 'es-config'>  Optional: false
+    Mounts:
+      /usr/share/elasticsearch/config/elasticsearch.yml from elasticsearch-config (rw,path="elasticsearch.yml")
+      /usr/share/elasticsearch/data from es-data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  es-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  es-data-esnode-0
+    ReadOnly:   false
+  elasticsearch-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      es-config
+    Optional:  false
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason            Age    From                     Message
+  ----     ------            ----   ----                     -------
+  Warning  FailedScheduling  2m31s  default-scheduler        pod has unbound immediate PersistentVolumeClaims
+  Normal   Scheduled         2m31s  default-scheduler        Successfully assigned default/esnode-0 to docker-desktop
+  Normal   Pulling           2m30s  kubelet, docker-desktop  Pulling image "busybox"
+  Normal   Pulled            2m25s  kubelet, docker-desktop  Successfully pulled image "busybox"
+  Normal   Created           2m25s  kubelet, docker-desktop  Created container init-sysctl
+  Normal   Started           2m25s  kubelet, docker-desktop  Started container init-sysctl
+  Normal   Pulling           2m25s  kubelet, docker-desktop  Pulling image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod esnode-0 --watch
+Error: unknown flag: --watch
+
+
+Examples:
+  # Describe a node
+  kubectl describe nodes kubernetes-node-emt8.c.myproject.internal
+
+  # Describe a pod
+  kubectl describe pods/nginx
+
+  # Describe a pod identified by type and name in "pod.json"
+  kubectl describe -f pod.json
+
+  # Describe all pods
+  kubectl describe pods
+
+  # Describe pods by label name=myLabel
+  kubectl describe po -l name=myLabel
+
+  # Describe all pods managed by the 'frontend' replication controller (rc-created pods
+  # get the name of the rc as a prefix in the pod the name).
+  kubectl describe pods frontend
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+  -f, --filename=[]: Filename, directory, or URL to files containing the resource to describe
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --show-events=true: If true, display events related to the described object.
+
+Usage:
+  kubectl describe (-f FILENAME | TYPE [NAME_PREFIX | -l label] | TYPE/NAME) [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod esnode-0
+Name:         esnode-0
+Namespace:    default
+Priority:     0
+Node:         docker-desktop/192.168.65.3
+Start Time:   Sat, 22 Aug 2020 22:25:08 +0300
+Labels:       app=es-cluster
+              controller-revision-hash=esnode-5bf9c78664
+              statefulset.kubernetes.io/pod-name=esnode-0
+Annotations:  <none>
+Status:       Running
+IP:           10.1.0.14
+IPs:
+  IP:           10.1.0.14
+Controlled By:  StatefulSet/esnode
+Init Containers:
+  init-sysctl:
+    Container ID:  docker://6933de8e938424812a02d0cb413830e02fafcbf15e7a51ab2610aaf656369e3c
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sysctl
+      -w
+      vm.max_map_count=262144
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 22 Aug 2020 22:25:14 +0300
+      Finished:     Sat, 22 Aug 2020 22:25:14 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Containers:
+  elasticsearch:
+    Container ID:   docker://0271b8bb3c3e82990cbdb236a334ca0df7aba5b66c558c2e8578999926042e09
+    Image:          docker.elastic.co/elasticsearch/elasticsearch:6.5.0
+    Image ID:       docker-pullable://docker.elastic.co/elasticsearch/elasticsearch@sha256:e0823ade6ccdc1275335c9f0a3721111abd01c964de577d648dc357bb8b858d1
+    Ports:          9200/TCP, 9300/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Running
+      Started:      Sat, 22 Aug 2020 22:27:52 +0300
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      memory:   1Gi
+    Readiness:  http-get http://:9200/_cluster/health%3Flocal=true delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ES_JAVA_OPTS:  <set to the key 'ES_JAVA_OPTS' of config map 'es-config'>  Optional: false
+    Mounts:
+      /usr/share/elasticsearch/config/elasticsearch.yml from elasticsearch-config (rw,path="elasticsearch.yml")
+      /usr/share/elasticsearch/data from es-data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  es-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  es-data-esnode-0
+    ReadOnly:   false
+  elasticsearch-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      es-config
+    Optional:  false
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason            Age   From                     Message
+  ----     ------            ----  ----                     -------
+  Warning  FailedScheduling  3m9s  default-scheduler        pod has unbound immediate PersistentVolumeClaims
+  Normal   Scheduled         3m9s  default-scheduler        Successfully assigned default/esnode-0 to docker-desktop
+  Normal   Pulling           3m8s  kubelet, docker-desktop  Pulling image "busybox"
+  Normal   Pulled            3m3s  kubelet, docker-desktop  Successfully pulled image "busybox"
+  Normal   Created           3m3s  kubelet, docker-desktop  Created container init-sysctl
+  Normal   Started           3m3s  kubelet, docker-desktop  Started container init-sysctl
+  Normal   Pulling           3m3s  kubelet, docker-desktop  Pulling image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+  Normal   Pulled            29s   kubelet, docker-desktop  Successfully pulled image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+  Normal   Created           25s   kubelet, docker-desktop  Created container elasticsearch
+  Normal   Started           25s   kubelet, docker-desktop  Started container elasticsearch
+  Warning  Unhealthy         12s   kubelet, docker-desktop  Readiness probe failed: Get http://10.1.0.14:9200/_cluster/health?local=true: dial tcp 10.1.0.14:9200: connect: connection refused
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl logs esnode-0
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-08-22T19:27:55,561][WARN ][o.e.c.l.LogConfigurator  ] [unknown] Some logging configurations have %marker but don't have %node_name. We will automatically add %node_name to the pattern to ease the migration for users who customize log4j2.properties but will stop this behavior in 7.0. You should manually replace `%node_name` with `[%node_name]%marker ` in these locations:
+  /usr/share/elasticsearch/config/log4j2.properties
+[2020-08-22T19:27:56,762][INFO ][o.e.e.NodeEnvironment    ] [ngSRnGW] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sdc)]], net usable_space [234.9gb], net total_space [250.9gb], types [ext4]
+[2020-08-22T19:27:56,763][INFO ][o.e.e.NodeEnvironment    ] [ngSRnGW] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-08-22T19:27:56,765][INFO ][o.e.n.Node               ] [ngSRnGW] node name derived from node ID [ngSRnGWXRj2yZBmzg80L4Q]; set [node.name] to override
+[2020-08-22T19:27:56,774][INFO ][o.e.n.Node               ] [ngSRnGW] version[6.5.0], pid[1], build[default/tar/816e6f6/2018-11-09T18:58:36.352602Z], OS[Linux/4.19.104-microsoft-standard/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11.0.1/11.0.1+13]
+[2020-08-22T19:27:56,775][INFO ][o.e.n.Node               ] [ngSRnGW] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/tmp/elasticsearch.Y30WGSpb, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.cgroups.hierarchy.override=/, -Xms512m, -Xmx512m, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/usr/share/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [aggs-matrix-stats]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [analysis-common]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [ingest-common]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-expression]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-mustache]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-painless]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [mapper-extras]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [parent-join]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [percolator]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [rank-eval]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [reindex]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [repository-url]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [transport-netty4]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [tribe]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-ccr]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-core]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-deprecation]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-graph]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-logstash]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-ml]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-monitoring]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-rollup]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-security]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-sql]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-upgrade]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-watcher]
+[2020-08-22T19:27:59,185][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded plugin [ingest-geoip]
+[2020-08-22T19:27:59,185][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded plugin [ingest-user-agent]
+[2020-08-22T19:28:03,578][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [ngSRnGW] [controller/62] [Main.cc@109] controller (64 bit): Version 6.5.0 (Build 71882a589e5556) Copyright (c) 2018 Elasticsearch BV
+[2020-08-22T19:28:04,317][INFO ][o.e.d.DiscoveryModule    ] [ngSRnGW] using discovery type [zen] and host providers [settings]
+[2020-08-22T19:28:05,248][INFO ][o.e.n.Node               ] [ngSRnGW] initialized
+[2020-08-22T19:28:05,249][INFO ][o.e.n.Node               ] [ngSRnGW] starting ...
+[2020-08-22T19:28:05,430][INFO ][o.e.t.TransportService   ] [ngSRnGW] publish_address {10.1.0.14:9300}, bound_addresses {0.0.0.0:9300}
+[2020-08-22T19:28:05,451][INFO ][o.e.b.BootstrapChecks    ] [ngSRnGW] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2020-08-22T19:28:06,355][WARN ][o.e.d.z.UnicastZenPing   ] [ngSRnGW] failed to resolve host [elasticsearch-cluster]
+java.net.UnknownHostException: elasticsearch-cluster: Name or service not known
+        at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[?:?]
+        at java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[?:?]
+        at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[?:?]
+        at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[?:?]
+        at java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[?:?]
+        at java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[?:?]
+        at java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[?:?]
+        at org.elasticsearch.transport.TcpTransport.parse(TcpTransport.java:707) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.transport.TcpTransport.addressesFromString(TcpTransport.java:662) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.transport.TransportService.addressesFromString(TransportService.java:768) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.discovery.zen.UnicastZenPing.lambda$resolveHostsLists$0(UnicastZenPing.java:184) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+        at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:624) [elasticsearch-6.5.0.jar:6.5.0]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+[2020-08-22T19:28:09,399][INFO ][o.e.c.s.MasterService    ] [ngSRnGW] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2020-08-22T19:28:09,407][INFO ][o.e.c.s.ClusterApplierService] [ngSRnGW] new_master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-08-22T19:28:09,456][INFO ][o.e.h.n.Netty4HttpServerTransport] [ngSRnGW] publish_address {10.1.0.14:9200}, bound_addresses {0.0.0.0:9200}
+[2020-08-22T19:28:09,457][INFO ][o.e.n.Node               ] [ngSRnGW] started
+[2020-08-22T19:28:09,550][INFO ][o.e.g.GatewayService     ] [ngSRnGW] recovered [0] indices into cluster_state
+[2020-08-22T19:28:09,660][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2020-08-22T19:28:09,707][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.watches] for index patterns [.watches*]
+[2020-08-22T19:28:09,760][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.watch-history-9] for index patterns [.watcher-history-9*]
+[2020-08-22T19:28:09,886][INFO ][o.e.l.LicenseService     ] [ngSRnGW] license [80bd8e41-3b82-4c33-944e-d9749b0d5adc] mode [basic] - valid
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl logs esnode-0
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-08-22T19:27:55,561][WARN ][o.e.c.l.LogConfigurator  ] [unknown] Some logging configurations have %marker but don't have %node_name. We will automatically add %node_name to the pattern to ease the migration for users who customize log4j2.properties but will stop this behavior in 7.0. You should manually replace `%node_name` with `[%node_name]%marker ` in these locations:
+  /usr/share/elasticsearch/config/log4j2.properties
+[2020-08-22T19:27:56,762][INFO ][o.e.e.NodeEnvironment    ] [ngSRnGW] using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/sdc)]], net usable_space [234.9gb], net total_space [250.9gb], types [ext4]
+[2020-08-22T19:27:56,763][INFO ][o.e.e.NodeEnvironment    ] [ngSRnGW] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-08-22T19:27:56,765][INFO ][o.e.n.Node               ] [ngSRnGW] node name derived from node ID [ngSRnGWXRj2yZBmzg80L4Q]; set [node.name] to override
+[2020-08-22T19:27:56,774][INFO ][o.e.n.Node               ] [ngSRnGW] version[6.5.0], pid[1], build[default/tar/816e6f6/2018-11-09T18:58:36.352602Z], OS[Linux/4.19.104-microsoft-standard/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11.0.1/11.0.1+13]
+[2020-08-22T19:27:56,775][INFO ][o.e.n.Node               ] [ngSRnGW] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/tmp/elasticsearch.Y30WGSpb, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.cgroups.hierarchy.override=/, -Xms512m, -Xmx512m, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/usr/share/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [aggs-matrix-stats]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [analysis-common]
+[2020-08-22T19:27:59,181][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [ingest-common]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-expression]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-mustache]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [lang-painless]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [mapper-extras]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [parent-join]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [percolator]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [rank-eval]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [reindex]
+[2020-08-22T19:27:59,182][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [repository-url]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [transport-netty4]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [tribe]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-ccr]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-core]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-deprecation]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-graph]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-logstash]
+[2020-08-22T19:27:59,183][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-ml]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-monitoring]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-rollup]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-security]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-sql]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-upgrade]
+[2020-08-22T19:27:59,184][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded module [x-pack-watcher]
+[2020-08-22T19:27:59,185][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded plugin [ingest-geoip]
+[2020-08-22T19:27:59,185][INFO ][o.e.p.PluginsService     ] [ngSRnGW] loaded plugin [ingest-user-agent]
+[2020-08-22T19:28:03,578][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [ngSRnGW] [controller/62] [Main.cc@109] controller (64 bit): Version 6.5.0 (Build 71882a589e5556) Copyright (c) 2018 Elasticsearch BV
+[2020-08-22T19:28:04,317][INFO ][o.e.d.DiscoveryModule    ] [ngSRnGW] using discovery type [zen] and host providers [settings]
+[2020-08-22T19:28:05,248][INFO ][o.e.n.Node               ] [ngSRnGW] initialized
+[2020-08-22T19:28:05,249][INFO ][o.e.n.Node               ] [ngSRnGW] starting ...
+[2020-08-22T19:28:05,430][INFO ][o.e.t.TransportService   ] [ngSRnGW] publish_address {10.1.0.14:9300}, bound_addresses {0.0.0.0:9300}
+[2020-08-22T19:28:05,451][INFO ][o.e.b.BootstrapChecks    ] [ngSRnGW] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2020-08-22T19:28:06,355][WARN ][o.e.d.z.UnicastZenPing   ] [ngSRnGW] failed to resolve host [elasticsearch-cluster]
+java.net.UnknownHostException: elasticsearch-cluster: Name or service not known
+        at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[?:?]
+        at java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[?:?]
+        at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[?:?]
+        at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[?:?]
+        at java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[?:?]
+        at java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[?:?]
+        at java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[?:?]
+        at org.elasticsearch.transport.TcpTransport.parse(TcpTransport.java:707) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.transport.TcpTransport.addressesFromString(TcpTransport.java:662) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.transport.TransportService.addressesFromString(TransportService.java:768) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at org.elasticsearch.discovery.zen.UnicastZenPing.lambda$resolveHostsLists$0(UnicastZenPing.java:184) ~[elasticsearch-6.5.0.jar:6.5.0]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+        at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:624) [elasticsearch-6.5.0.jar:6.5.0]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+[2020-08-22T19:28:09,399][INFO ][o.e.c.s.MasterService    ] [ngSRnGW] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2020-08-22T19:28:09,407][INFO ][o.e.c.s.ClusterApplierService] [ngSRnGW] new_master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {ngSRnGW}{ngSRnGWXRj2yZBmzg80L4Q}{H2_LvrcoTqeHB3P2LTC5Nw}{10.1.0.14}{10.1.0.14:9300}{ml.machine_memory=6568312832, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-08-22T19:28:09,456][INFO ][o.e.h.n.Netty4HttpServerTransport] [ngSRnGW] publish_address {10.1.0.14:9200}, bound_addresses {0.0.0.0:9200}
+[2020-08-22T19:28:09,457][INFO ][o.e.n.Node               ] [ngSRnGW] started
+[2020-08-22T19:28:09,550][INFO ][o.e.g.GatewayService     ] [ngSRnGW] recovered [0] indices into cluster_state
+[2020-08-22T19:28:09,660][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2020-08-22T19:28:09,707][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.watches] for index patterns [.watches*]
+[2020-08-22T19:28:09,760][INFO ][o.e.c.m.MetaDataIndexTemplateService] [ngSRnGW] adding template [.watch-history-9] for index patterns [.watcher-history-9*]
+[2020-08-22T19:28:09,886][INFO ][o.e.l.LicenseService     ] [ngSRnGW] license [80bd8e41-3b82-4c33-944e-d9749b0d5adc] mode [basic] - valid
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl describe pod esnode-0
+Name:         esnode-0
+Namespace:    default
+Priority:     0
+Node:         docker-desktop/192.168.65.3
+Start Time:   Sat, 22 Aug 2020 22:25:08 +0300
+Labels:       app=es-cluster
+              controller-revision-hash=esnode-5bf9c78664
+              statefulset.kubernetes.io/pod-name=esnode-0
+Annotations:  <none>
+Status:       Running
+IP:           10.1.0.14
+IPs:
+  IP:           10.1.0.14
+Controlled By:  StatefulSet/esnode
+Init Containers:
+  init-sysctl:
+    Container ID:  docker://6933de8e938424812a02d0cb413830e02fafcbf15e7a51ab2610aaf656369e3c
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:4f47c01fa91355af2865ac10fef5bf6ec9c7f42ad2321377c21e844427972977
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sysctl
+      -w
+      vm.max_map_count=262144
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 22 Aug 2020 22:25:14 +0300
+      Finished:     Sat, 22 Aug 2020 22:25:14 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Containers:
+  elasticsearch:
+    Container ID:   docker://0271b8bb3c3e82990cbdb236a334ca0df7aba5b66c558c2e8578999926042e09
+    Image:          docker.elastic.co/elasticsearch/elasticsearch:6.5.0
+    Image ID:       docker-pullable://docker.elastic.co/elasticsearch/elasticsearch@sha256:e0823ade6ccdc1275335c9f0a3721111abd01c964de577d648dc357bb8b858d1
+    Ports:          9200/TCP, 9300/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Running
+      Started:      Sat, 22 Aug 2020 22:27:52 +0300
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      memory:   1Gi
+    Readiness:  http-get http://:9200/_cluster/health%3Flocal=true delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ES_JAVA_OPTS:  <set to the key 'ES_JAVA_OPTS' of config map 'es-config'>  Optional: false
+    Mounts:
+      /usr/share/elasticsearch/config/elasticsearch.yml from elasticsearch-config (rw,path="elasticsearch.yml")
+      /usr/share/elasticsearch/data from es-data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-284rj (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  es-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  es-data-esnode-0
+    ReadOnly:   false
+  elasticsearch-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      es-config
+    Optional:  false
+  default-token-284rj:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-284rj
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason            Age    From                     Message
+  ----     ------            ----   ----                     -------
+  Warning  FailedScheduling  4m15s  default-scheduler        pod has unbound immediate PersistentVolumeClaims
+  Normal   Scheduled         4m15s  default-scheduler        Successfully assigned default/esnode-0 to docker-desktop
+  Normal   Pulling           4m14s  kubelet, docker-desktop  Pulling image "busybox"
+  Normal   Pulled            4m9s   kubelet, docker-desktop  Successfully pulled image "busybox"
+  Normal   Created           4m9s   kubelet, docker-desktop  Created container init-sysctl
+  Normal   Started           4m9s   kubelet, docker-desktop  Started container init-sysctl
+  Normal   Pulling           4m9s   kubelet, docker-desktop  Pulling image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+  Normal   Pulled            95s    kubelet, docker-desktop  Successfully pulled image "docker.elastic.co/elasticsearch/elasticsearch:6.5.0"
+  Normal   Created           91s    kubelet, docker-desktop  Created container elasticsearch
+  Normal   Started           91s    kubelet, docker-desktop  Started container elasticsearch
+  Warning  Unhealthy         78s    kubelet, docker-desktop  Readiness probe failed: Get http://10.1.0.14:9200/_cluster/health?local=true: dial tcp 10.1.0.14:9200: connect: connection refused
+avivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl get pods --watch
+NAME                                 READY   STATUS    RESTARTS   AGE
+esnode-0                             1/1     Running   0          4m25s
+logapp-deployment-569dd8b478-mzjjv   1/1     Running   0          27h
+^Cavivka@DESKTOP-48MKEI0:~/LogApp/controllers$ kubectl logs esnode-0

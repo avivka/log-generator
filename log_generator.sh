@@ -2,7 +2,7 @@
 
 set -e
 
-LOGFILE=${LOGFILE:-/var/log/date.log} 
+LOGFILE=${LOGFILE:-/var/log/application.log} 
 
 while true
 do

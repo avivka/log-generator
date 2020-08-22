@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logapp-deployment
+  labels:
+    app: log-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-app
+  template:
+    metadata:
+      labels:
+        app: log-app
+    spec:
+      containers:
+      - name: log-generator
+        image: log-app:v1
+        env:
+        - name: LOGFILE
+          value: /logs/application.log
+        volumeMounts:
+        - mountPath: /logs
+          name: service-log
+      volumes:
+      - hostPath:
+          path: /logs
+        name: service-log
